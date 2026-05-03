@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atelier des Essences — YSL Beauty | Couture Fragrance, Co-Created</title>
+  <meta name="description" content="Atelier des Essences redefines luxury fragrance by transforming selection into co-creation. A private couture atelier where AI, sensory intelligence and craftsmanship converge to create a one-of-one scent." />
+  <meta name="theme-color" content="#0a0807" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&family=Italiana&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0807'/%3E%3Ctext x='16' y='22' font-family='Georgia' font-size='18' fill='%23c9a961' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <!-- Loader -->
+  <div class="loader">
+    <div class="loader-mark">Atelier des Essences</div>
+    <div class="loader-bar"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">YSL</span>
+        <span class="logo-sub">Atelier des Essences</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#experience">The Ritual</a></li>
+        <li><a href="pages/technology.html">Technology</a></li>
+        <li><a href="pages/collective.html">Collective</a></li>
+        <li><a href="pages/sustainability.html">Sustainability</a></li>
+        <li><a href="#timeline">Atelier Locations</a></li>
+      </ul>
+      <a href="pages/book.html" class="nav-cta">Reserve a Session</a>
+      <button class="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <a href="#experience">The Ritual</a>
+    <a href="pages/technology.html">Technology</a>
+    <a href="pages/collective.html">Collective</a>
+    <a href="pages/sustainability.html">Sustainability</a>
+    <a href="pages/book.html">Reserve a Session</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grain"></div>
+    <div class="particles"></div>
+
+    <!-- Bottle SVG -->
+    <svg class="hero-bottle" viewBox="0 0 280 420" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="bottleGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#c9a961" stop-opacity="0.05" />
+          <stop offset="40%" stop-color="#c9a961" stop-opacity="0.18" />
+          <stop offset="100%" stop-color="#c9a961" stop-opacity="0.45" />
+        </linearGradient>
+        <linearGradient id="capGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#e6c477" />
+          <stop offset="100%" stop-color="#8b7340" />
+        </linearGradient>
+        <radialGradient id="liquid" cx="0.5" cy="0.6" r="0.6">
+          <stop offset="0%" stop-color="#e6c477" stop-opacity="0.5" />
+          <stop offset="100%" stop-color="#c9a961" stop-opacity="0.0" />
+        </radialGradient>
+      </defs>
+      <!-- Bottle body -->
+      <rect x="60" y="120" width="160" height="260" rx="6" fill="url(#bottleGrad)" stroke="#c9a961" stroke-width="0.6" stroke-opacity="0.6" />
+      <!-- Neck -->
+      <rect x="115" y="80" width="50" height="40" fill="url(#bottleGrad)" stroke="#c9a961" stroke-width="0.6" stroke-opacity="0.6" />
+      <!-- Cap -->
+      <rect x="105" y="40" width="70" height="48" fill="url(#capGrad)" />
+      <rect x="105" y="40" width="70" height="6" fill="#e6c477" />
+      <!-- Liquid swirl -->
+      <ellipse cx="140" cy="280" rx="50" ry="60" fill="url(#liquid)" opacity="0.8">
+        <animate attributeName="ry" values="60;70;60" dur="4s" repeatCount="indefinite" />
+      </ellipse>
+      <!-- YSL monogram -->
+      <text x="140" y="240" font-family="Cormorant Garamond" font-size="22" fill="#c9a961" text-anchor="middle" letter-spacing="3" opacity="0.85">YSL</text>
+      <text x="140" y="262" font-family="Cormorant Garamond" font-size="9" font-style="italic" fill="#c9a961" text-anchor="middle" letter-spacing="2" opacity="0.7">Atelier des Essences</text>
+      <!-- NFC dot -->
+      <circle cx="200" cy="370" r="3" fill="#e6c477">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" />
+      </circle>
+      <text x="195" y="368" font-family="JetBrains Mono" font-size="5" fill="#c9a961" text-anchor="end" letter-spacing="1">NFC</text>
+    </svg>
+
+    <div class="container hero-inner">
+      <div class="hero-meta reveal">
+        <div class="hero-meta-item">
+          L'Oréal Brandstorm 2026
+          <strong>YSL Luxe</strong>
+        </div>
+        <div class="hero-meta-item">
+          Beta Atelier
+          <strong>Dubai · Opening Q4 2026</strong>
+        </div>
+        <div class="hero-meta-item">
+          By Appointment
+          <strong>Sessions: 6–8 / day</strong>
+        </div>
+      </div>
+
+      <div class="eyebrow reveal">A new chapter in fragrance</div>
+
+      <h1 class="display-xl hero-title reveal" style="margin-top: 1.5rem;">
+        <span data-split>Atelier des Essences</span>
+      </h1>
+
+      <p class="hero-tagline reveal reveal-delay-2">Couture fragrance, co&#8209;created.</p>
+
+      <p class="hero-desc reveal reveal-delay-3">
+        Step inside a private couture atelier where AI, sensory intelligence and
+        master craftsmanship converge to create a one&#8209;of&#8209;one scent — composed
+        in real time around your biology, your mood, your memory.
+      </p>
+
+      <div class="hero-actions reveal reveal-delay-4">
+        <a href="pages/book.html" class="btn btn-primary">Reserve a Session</a>
+        <a href="#experience" class="btn">Discover the Ritual</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <div class="marquee-item">Privacy-first beauty tech</div>
+      <div class="marquee-item">One bottle. For life.</div>
+      <div class="marquee-item">Composed around your biology</div>
+      <div class="marquee-item">Genderless by default</div>
+      <div class="marquee-item">Refillable luxury ecosystem</div>
+      <div class="marquee-item">Privacy-first beauty tech</div>
+      <div class="marquee-item">One bottle. For life.</div>
+      <div class="marquee-item">Composed around your biology</div>
+      <div class="marquee-item">Genderless by default</div>
+      <div class="marquee-item">Refillable luxury ecosystem</div>
+    </div>
+  </div>
+
+  <!-- Manifesto -->
+  <section class="section manifesto">
+    <div class="container">
+      <p class="manifesto-quote reveal" data-split>
+        Fragrance has always been chosen. We believe it should be <em>composed</em>.
+      </p>
+      <div class="manifesto-attr reveal reveal-delay-3">
+        <span>—</span>
+        <span>The YSL Atelier Manifesto</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience / The Ritual -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow reveal">The Ritual · 90 minutes</div>
+          <h2 class="display-lg reveal reveal-delay-1" style="margin-top: 1.5rem;">
+            Four movements,<br /><em>one essence.</em>
+          </h2>
+        </div>
+        <p class="lede reveal reveal-delay-2">
+          Each session is a private composition. From neural baseline to bottle,
+          every step is engineered around the singular biology of one person.
+        </p>
+      </div>
+
+      <div class="steps">
+        <article class="step reveal">
+          <div class="step-num">01</div>
+          <h3 class="step-title">Opt-in &amp;<br />Consent</h3>
+          <div class="step-rule"></div>
+          <p class="step-desc">
+            You arrive for your appointment. Session data is ephemeral — biometrics
+            are processed in real time and erased after formula creation. Only your
+            anonymised ScentID vault is stored.
+          </p>
+          <span class="step-tag">Privacy-first</span>
+        </article>
+
+        <article class="step reveal reveal-delay-1">
+          <div class="step-num">02</div>
+          <h3 class="step-title">Sense &amp;<br />Scan</h3>
+          <div class="step-rule"></div>
+          <p class="step-desc">
+            You wear the YSL Scent-Sation neuroheadset (EEG) and rest your wrist on
+            the ScentPod — a soft sensing capsule that reads pH, temperature, sebum,
+            moisture and your natural VOC signature via Osmobloom™ air-capture.
+          </p>
+          <span class="step-tag">Biometric baseline</span>
+        </article>
+
+        <article class="step reveal reveal-delay-2">
+          <div class="step-num">03</div>
+          <h3 class="step-title">Create &amp;<br />Iterate</h3>
+          <div class="step-rule"></div>
+          <p class="step-desc">
+            AI synthesises a first 0.5 ml micro-sample using accord families
+            calibrated to your neural responses and skin profile. You smell, give
+            verbal feedback, and the formula is adjusted 2–3 times until approval.
+          </p>
+          <span class="step-tag">Live co-creation</span>
+        </article>
+
+        <article class="step reveal reveal-delay-3">
+          <div class="step-num">04</div>
+          <h3 class="step-title">Bottle &amp;<br />ScentID</h3>
+          <div class="step-rule"></div>
+          <p class="step-desc">
+            Your finalised 50 ml formula is dispensed, bottled and engraved. The
+            NFC-embedded refillable bottle links to your ScentID vault — instant
+            refills or seasonal Scent Evolutions at any YSL flagship globally.
+          </p>
+          <span class="step-tag">Forever yours</span>
+        </article>
+      </div>
+
+      <div style="text-align: center; margin-top: 4rem;" class="reveal">
+        <a href="pages/experience.html" class="btn-arrow">Walk through the full ritual</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pillars / Atelier Advantage -->
+  <section class="section pillars" id="advantage">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow reveal">The Atelier Advantage</div>
+          <h2 class="display-lg reveal reveal-delay-1" style="margin-top: 1.5rem;">
+            Built on three<br /><em>uncompromised</em> principles.
+          </h2>
+        </div>
+        <p class="lede reveal reveal-delay-2">
+          The first consumer-facing neural-to-formula pipeline in beauty,
+          designed for circular luxury, and inclusive by architecture — not
+          afterthought.
+        </p>
+      </div>
+
+      <div class="pillar-grid">
+
+        <article class="pillar reveal">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 64 64">
+              <circle cx="32" cy="22" r="10" />
+              <path d="M22 32 L42 32 M32 32 L32 50" />
+              <circle cx="20" cy="50" r="4" fill="currentColor" />
+              <circle cx="44" cy="50" r="4" fill="currentColor" />
+              <path d="M16 18 Q12 18 12 22 M48 18 Q52 18 52 22" />
+            </svg>
+          </div>
+          <div class="pillar-eyebrow">Innovative</div>
+          <h3 class="pillar-title">Creation, not recommendation.</h3>
+
+          <ul class="pillar-features">
+            <li>
+              <h4>Neural-to-formula pipeline</h4>
+              <p>YSL Scent-Sation already recommends existing fragrances. We use the same EEG feedback to compose a new formula in real time — a first.</p>
+            </li>
+            <li>
+              <h4>ScentPod wrist sensor</h4>
+              <p>A soft capsule reads skin pH, sebum, moisture and VOC signature via miniaturised e-nose. The wrist is where perfume lives — scientifically optimal.</p>
+            </li>
+            <li>
+              <h4>Osmobloom™ on skin</h4>
+              <p>The waterless, solvent-free air-capture behind Osmobloom™ adapted to extract each client's unique ambient scent molecules.</p>
+            </li>
+            <li>
+              <h4>Four unpatented white spaces</h4>
+              <p>Body-VOC → formula. Closed-loop neural feedback. Integrated booth. EEG-guided creation. All patentable. No competitor touches this.</p>
+            </li>
+          </ul>
+        </article>
+
+        <article class="pillar reveal reveal-delay-1">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 64 64">
+              <path d="M32 8 C24 16 18 24 18 36 C18 46 24 54 32 54 C40 54 46 46 46 36 C46 24 40 16 32 8 Z" />
+              <path d="M32 22 L32 44 M24 32 L40 32" />
+              <path d="M14 50 Q32 60 50 50" />
+            </svg>
+          </div>
+          <div class="pillar-eyebrow">Sustainable</div>
+          <h3 class="pillar-title">Refill-first, always.</h3>
+
+          <ul class="pillar-features">
+            <li>
+              <h4>One bottle, for life</h4>
+              <p>NFC-embedded refillable bottle. Each refill saves ~200–250 g of packaging. Aligned to L'Oréal Luxe's 1,621% increase in refillable references.</p>
+            </li>
+            <li>
+              <h4>Zero overproduction</h4>
+              <p>On-demand creation produces only what is ordered. No batch forecasting, no unsold inventory, no surplus destruction.</p>
+            </li>
+            <li>
+              <h4>Osmobloom™ ingredients</h4>
+              <p>Waterless air-capture, no heat or solvents, flowers left intact. Aligned to L'Oréal's 95% biobased / circular target by 2030.</p>
+            </li>
+            <li>
+              <h4>Data drives less waste industry-wide</h4>
+              <p>Aggregated preference data informs limited Collective releases — produced only to known demand, eliminating the industry's 95% single-use packaging norm.</p>
+            </li>
+          </ul>
+        </article>
+
+        <article class="pillar reveal reveal-delay-2">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 64 64">
+              <circle cx="32" cy="20" r="8" />
+              <path d="M16 56 Q16 38 32 38 Q48 38 48 56" />
+              <circle cx="14" cy="26" r="5" />
+              <circle cx="50" cy="26" r="5" />
+              <path d="M4 50 Q4 38 14 38 M60 50 Q60 38 50 38" />
+            </svg>
+          </div>
+          <div class="pillar-eyebrow">Inclusive</div>
+          <h3 class="pillar-title">Genderless by default.</h3>
+
+          <ul class="pillar-features">
+            <li>
+              <h4>Composed around chemistry, not archetype</h4>
+              <p>AI creates from individual body chemistry and neural response — never gendered marketing personas. 60% of Gen Z prefer gender-neutral fragrance.</p>
+            </li>
+            <li>
+              <h4>Tiered access model</h4>
+              <p>Free ScentID quiz → $100–150 Collective annual edition → $400–500 full bespoke → $260–350 refill. Luxury made approachable.</p>
+            </li>
+            <li>
+              <h4>YSL Collective — data as oil</h4>
+              <p>Aggregated insights from thousands of sessions generate limited mass-market releases. Data becomes democratised luxury.</p>
+            </li>
+            <li>
+              <h4>Accessible by design</h4>
+              <p>HAPTA-inspired booth: wheelchair accessible, NFC-to-audio for the visually impaired, braille engraving, alcohol-free format, multi-language AI.</p>
+            </li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+  <section class="section tech" id="technology">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow reveal">Technology Stack · L'Oréal IP</div>
+          <h2 class="display-lg reveal reveal-delay-1" style="margin-top: 1.5rem;">
+            Six commercial<br />platforms.<br /><em>One ritual.</em>
+          </h2>
+        </div>
+        <p class="lede reveal reveal-delay-2">
+          Every layer of Atelier des Essences is built on technology already
+          deployed inside L'Oréal — derisking innovation while opening four
+          unpatented frontiers.
+        </p>
+      </div>
+
+      <div class="tech-grid">
+        <article class="tech-card reveal">
+          <div class="tech-card-num">01 / Neural Sensing</div>
+          <h3 class="tech-card-title">YSL Scent-Sation</h3>
+          <div class="tech-card-meta">EEG + EMOTIV</div>
+          <p class="tech-card-desc">
+            Commercially deployed in YSL flagship Dubai since 2024. Reads emotional
+            response to scent in real time, originally for fragrance recommendation —
+            we extend it to fragrance creation.
+          </p>
+          <span class="tech-card-status">Live · Production</span>
+        </article>
+
+        <article class="tech-card reveal reveal-delay-1">
+          <div class="tech-card-num">02 / Olfactive Capture</div>
+          <h3 class="tech-card-title">Osmobloom™</h3>
+          <div class="tech-card-meta">Air-capture VOC</div>
+          <p class="tech-card-desc">
+            Waterless, solvent-free air-capture pioneered for capturing flower
+            molecules without harming the plant. Adapted to extract each client's
+            unique ambient body-VOC signature on skin.
+          </p>
+          <span class="tech-card-status">Adapted to skin</span>
+        </article>
+
+        <article class="tech-card reveal reveal-delay-2">
+          <div class="tech-card-num">03 / Formulation</div>
+          <h3 class="tech-card-title">Perso</h3>
+          <div class="tech-card-meta">Micro-dispensing AI</div>
+          <p class="tech-card-desc">
+            L'Oréal's at-home personalised cosmetics platform repurposed for
+            fragrance: AI-driven micro-dispensing of accord families calibrated to
+            biometric inputs.
+          </p>
+          <span class="tech-card-status">Repurposed for scent</span>
+        </article>
+
+        <article class="tech-card reveal">
+          <div class="tech-card-num">04 / AI Platform</div>
+          <h3 class="tech-card-title">ModiFace</h3>
+          <div class="tech-card-meta">30+ brand deployments</div>
+          <p class="tech-card-desc">
+            The shared AI/data infrastructure already powering 30+ L'Oréal brands.
+            Atelier sessions feed into a global ScentID vault — every booth strengthens
+            the entire network.
+          </p>
+          <span class="tech-card-status">Shared infrastructure</span>
+        </article>
+
+        <article class="tech-card reveal reveal-delay-1">
+          <div class="tech-card-num">05 / Biology</div>
+          <h3 class="tech-card-title">Cell BioPrint</h3>
+          <div class="tech-card-meta">Microfluidic profiling</div>
+          <p class="tech-card-desc">
+            L'Oréal's microfluidic biological profiling platform provides the
+            scientific basis for skin-chemistry baselining inside ScentPod —
+            transforming fragrance from cosmetic to biological.
+          </p>
+          <span class="tech-card-status">Integrated</span>
+        </article>
+
+        <article class="tech-card reveal reveal-delay-2">
+          <div class="tech-card-num">06 / Accessibility</div>
+          <h3 class="tech-card-title">HAPTA</h3>
+          <div class="tech-card-meta">Inclusive sensor hardware</div>
+          <p class="tech-card-desc">
+            The motion-stabilised accessible applicator informs the booth's
+            ergonomic design. Wheelchair access, audio interface, braille engraving
+            — accessibility as a default, not feature.
+          </p>
+          <span class="tech-card-status">Hardware reference</span>
+        </article>
+      </div>
+
+      <div style="text-align: center; margin-top: 4rem;" class="reveal">
+        <a href="pages/technology.html" class="btn-arrow">Explore the full technology stack</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing / Tiers -->
+  <section class="section pricing" id="pricing">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow reveal">Tiered Access · Luxury made approachable</div>
+          <h2 class="display-lg reveal reveal-delay-1" style="margin-top: 1.5rem;">
+            From the <em>quiz</em> to<br />the bespoke bottle.
+          </h2>
+        </div>
+        <p class="lede reveal reveal-delay-2">
+          A four-tier ladder modelled on the Fenty principle: free at the entry,
+          uncompromised at the apex. Designed so anyone can step into the
+          Atelier world.
+        </p>
+      </div>
+
+      <div class="tier-grid">
+
+        <article class="tier reveal">
+          <div class="tier-name">ScentID Quiz</div>
+          <div class="tier-meta">Universal · Digital</div>
+          <hr />
+          <div class="tier-price">Free</div>
+          <div class="tier-price-meta">Online · 4 minutes</div>
+          <ul class="tier-features">
+            <li>Personality + scent archetype</li>
+            <li>YSL fragrance recommendation</li>
+            <li>Vault entry to Collective drops</li>
+          </ul>
+          <a href="pages/book.html#quiz" class="btn-arrow">Take the quiz</a>
+        </article>
+
+        <article class="tier reveal reveal-delay-1">
+          <div class="tier-name">Collective Edition</div>
+          <div class="tier-meta">Annual · Limited release</div>
+          <hr />
+          <div class="tier-price">$100<span style="font-size:0.5em;">–150</span></div>
+          <div class="tier-price-meta">50 ml · Refillable</div>
+          <ul class="tier-features">
+            <li>Born from real biometric data</li>
+            <li>Genderless by composition</li>
+            <li>Refill at any YSL flagship</li>
+            <li>NFC-linked to your ScentID</li>
+          </ul>
+          <a href="pages/collective.html" class="btn-arrow">See the Collective</a>
+        </article>
+
+        <article class="tier featured reveal reveal-delay-2">
+          <div class="tier-name">Bespoke Creation</div>
+          <div class="tier-meta">Atelier · 90 minute session</div>
+          <hr />
+          <div class="tier-price">$400<span style="font-size:0.5em;">–500</span></div>
+          <div class="tier-price-meta">50 ml · Engraved · Refillable</div>
+          <ul class="tier-features">
+            <li>Full neural + biometric session</li>
+            <li>One-of-one formula composed live</li>
+            <li>Engraved bottle + ScentID vault</li>
+            <li>Master perfumer review</li>
+            <li>Lifetime refill at any flagship</li>
+          </ul>
+          <a href="pages/book.html" class="btn-arrow">Reserve a session</a>
+        </article>
+
+        <article class="tier reveal reveal-delay-3">
+          <div class="tier-name">Refill</div>
+          <div class="tier-meta">In-store or via NFC</div>
+          <hr />
+          <div class="tier-price">$260<span style="font-size:0.5em;">–350</span></div>
+          <div class="tier-price-meta">50 ml · Same formula or evolution</div>
+          <ul class="tier-features">
+            <li>Tap-to-refill at any YSL flagship</li>
+            <li>Optional Scent Evolution (seasonal)</li>
+            <li>Saves ~200–250 g packaging</li>
+            <li>Always linked to your ScentID</li>
+          </ul>
+          <a href="pages/book.html#refill" class="btn-arrow">Find a refill atelier</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline / Rollout -->
+  <section class="section timeline" id="timeline">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow reveal">Global Rollout · 2026 — 2030</div>
+          <h2 class="display-lg reveal reveal-delay-1" style="margin-top: 1.5rem;">
+            From one Dubai<br />flagship to a <em>luxury</em><br /><em>ecosystem.</em>
+          </h2>
+        </div>
+        <p class="lede reveal reveal-delay-2">
+          Modular hardware, shared AI platform, data flywheel that strengthens
+          every session globally. Designed to scale from boutique pilot to
+          travel-retail standard within four years.
+        </p>
+      </div>
+
+      <div class="timeline-list">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-year">Year 1<span>2026 · Pilot</span></div>
+          <div class="timeline-content">
+            <h3>Dubai · 1 booth, 1 YSL flagship.</h3>
+            <div class="timeline-cities">Dubai Mall · Fashion Avenue</div>
+            <p>Prove demand. Refine hardware. Collect the first biometric dataset. Dubai chosen for the Scent-Sation precedent, luxury density and multi-cultural audience.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-year">Year 2<span>2027 · 5-City Proof</span></div>
+          <div class="timeline-content">
+            <h3>Dubai · London · Tokyo · Paris · New York.</h3>
+            <div class="timeline-cities">5 flagship ateliers</div>
+            <p>Validate across luxury markets and cultural fragrance preferences. Establish the ScentID vault globally. Begin Collective line development from aggregated data.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-year">Year 3–4<span>2028–2029 · Scale</span></div>
+          <div class="timeline-content">
+            <h3>Top 20 YSL flagships + travel retail.</h3>
+            <div class="timeline-cities">Hardware: $400–600 K / booth at scale</div>
+            <p>Booth manufacturing matures. Expand ScentID remote refill ordering and Scent Evolution personalisation. Travel retail (DXB, CDG, HND, JFK) becomes a cornerstone channel.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-year">Year 4+<span>2030+ · Platform</span></div>
+          <div class="timeline-content">
+            <h3>L'Oréal Luxe Ecosystem + Hospitality.</h3>
+            <div class="timeline-cities">B2B licensing · 'Intel Inside' model</div>
+            <p>White-label to Armani Privé, Maison Margiela REPLICA, Creed, Mugler. B2B licensing to Four Seasons, Emirates and Harrods at $200–500 K / yr + revenue share.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Metrics -->
+  <section class="section-tight metrics">
+    <div class="container">
+      <div class="eyebrow reveal" style="margin-bottom: 3rem;">By the numbers · Targets</div>
+      <div class="metrics-grid">
+        <div class="metric reveal">
+          <div class="metric-value">$<span data-count="430">0</span><sup>+</sup></div>
+          <div class="metric-label">Average selling price</div>
+          <div class="metric-desc">Bespoke ASP across pilot ateliers, with strong margin headroom from refill economics.</div>
+        </div>
+        <div class="metric reveal reveal-delay-1">
+          <div class="metric-value"><span data-count="80">0</span>%</div>
+          <div class="metric-label">Session → Purchase</div>
+          <div class="metric-desc">Conversion target inside the booth. Co-creation removes the buy / no-buy decision.</div>
+        </div>
+        <div class="metric reveal reveal-delay-2">
+          <div class="metric-value"><span data-count="45">0</span>%<sup>+</sup></div>
+          <div class="metric-label">90-day refill rate</div>
+          <div class="metric-desc">Refill ordered within first 90 days via NFC tap or remote ScentID order.</div>
+        </div>
+        <div class="metric reveal reveal-delay-3">
+          <div class="metric-value"><span data-count="2000">0</span></div>
+          <div class="metric-label">Packaging units saved /yr</div>
+          <div class="metric-desc">Per booth, at full utilisation. Industry standard is 95% single-use.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Press -->
+  <section class="press">
+    <div class="container">
+      <p class="press-eyebrow reveal">As seen in the conversation</p>
+      <div class="press-logos">
+        <span class="press-logo reveal">Vogue Business</span>
+        <span class="press-logo reveal reveal-delay-1">WWD</span>
+        <span class="press-logo reveal reveal-delay-2">Business of Fashion</span>
+        <span class="press-logo reveal reveal-delay-3">Cosmetics Business</span>
+        <span class="press-logo reveal reveal-delay-4">Wallpaper*</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow reveal">Considered Questions</div>
+          <h2 class="display-lg reveal reveal-delay-1" style="margin-top: 1.5rem;">
+            What you might<br /><em>wish to know.</em>
+          </h2>
+        </div>
+        <p class="lede reveal reveal-delay-2">
+          A composition this intimate naturally invites questions — about
+          biology, privacy, longevity. Answers below; the team in atelier will
+          go deeper still.
+        </p>
+      </div>
+
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <div class="faq-q">What exactly does the EEG measure?</div>
+          <div class="faq-a">A 16-channel dry-electrode neuroheadset (built on EMOTIV / EEF) reads broad emotional valence and arousal — not thoughts. It is the same underlying technology already in commercial use at YSL flagship Dubai for fragrance recommendation. We extend it from suggesting existing scents to composing new ones.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">How is my biometric data handled?</div>
+          <div class="faq-a">Session data is ephemeral — neural and skin biometrics are processed in real time and erased after formula creation. Only an anonymised ScentID vault is retained, encrypted and unlinked from personally identifying information. You can request deletion at any time, in any market, in compliance with GDPR, UAE PDPL and California CCPA.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">How long does a session take?</div>
+          <div class="faq-a">A complete bespoke session is approximately 90 minutes — 10 minutes onboarding and consent, 25 minutes neural and biometric baseline, 40 minutes co-creation across 2–3 micro-sample iterations, and 15 minutes for engraving, ScentID vault setup and aftercare guidance.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Can I refill anywhere in the world?</div>
+          <div class="faq-a">Yes. Your NFC-embedded bottle and ScentID vault are recognised at every YSL flagship and Atelier-equipped travel-retail location. From Year 2 onward, remote refill ordering is also available — your formula is composed locally to the same neural and skin baseline that created the original.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">What if my body chemistry changes over time?</div>
+          <div class="faq-a">It will — and that is the point. Each refill can be ordered as the original formula or as a Scent Evolution: a recomposition tuned to your current state at a fresh micro-baseline. We expect 20%+ of users to opt for evolutions, especially across seasons or major life moments.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Is the booth accessible?</div>
+          <div class="faq-a">Yes. The booth's ergonomic design draws on L'Oréal's HAPTA platform: wheelchair-accessible entry and console height, NFC-to-audio narration for visually impaired guests, braille engraving on the bottle, alcohol-free formula option, and multi-language AI conversation. Accessibility is structural, not optional.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Does the formula contain animal-derived ingredients?</div>
+          <div class="faq-a">No. The Atelier formula library is fully vegan, IFRA-compliant and uses Osmobloom™ air-captured naturals plus L'Oréal's library of biotech and circular synthetic accords. Ingredient transparency is available digitally via tap-to-read NFC.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta">
+    <div class="container cta-inner">
+      <div class="eyebrow reveal" style="justify-content: center; display: inline-flex;">Reserve your atelier</div>
+      <h2 class="cta-title reveal reveal-delay-1" style="margin-top: 1.75rem;">
+        A scent the world has never <em>worn before</em>.
+      </h2>
+      <p class="cta-desc reveal reveal-delay-2">
+        Sessions are by appointment only and limited to 6–8 per day per atelier.
+        The Dubai pilot opens Q4 2026. Reserve your place in the founding cohort.
+      </p>
+      <div class="cta-actions reveal reveal-delay-3">
+        <a href="pages/book.html" class="btn btn-primary">Reserve a Session</a>
+        <a href="pages/collective.html" class="btn">Discover the Collective</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-mark">YSL</span>
+            <span class="logo-sub">Atelier des Essences</span>
+          </a>
+          <p>Couture fragrance, co-created. A YSL Beauty initiative — L'Oréal Luxe — built for the next decade of personal scent.</p>
+        </div>
+
+        <div>
+          <h5>Atelier</h5>
+          <ul class="footer-links">
+            <li><a href="#experience">The Ritual</a></li>
+            <li><a href="pages/technology.html">Technology</a></li>
+            <li><a href="pages/collective.html">Collective Edition</a></li>
+            <li><a href="pages/book.html">Reserve a session</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5>House</h5>
+          <ul class="footer-links">
+            <li><a href="pages/sustainability.html">Sustainability</a></li>
+            <li><a href="#timeline">Locations</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#technology">Investor Brief</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5>Considered</h5>
+          <ul class="footer-links">
+            <li><a href="#">Privacy &amp; Data Ethics</a></li>
+            <li><a href="#">Accessibility statement</a></li>
+            <li><a href="#">Press &amp; Inquiries</a></li>
+            <li><a href="#">Careers at YSL Atelier</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 YSL Beauty · L'Oréal Luxe · Brandstorm submission</div>
+        <div>
+          <a href="#">Terms</a> &nbsp;·&nbsp; <a href="#">Privacy</a> &nbsp;·&nbsp; <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reserve a Session — Atelier des Essences</title>
+  <meta name="description" content="Reserve a 90-minute couture composition session. Limited release for the founding cohort, Dubai Q4 2026." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&family=Italiana&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+  <div class="loader">
+    <div class="loader-mark">Reserve</div>
+    <div class="loader-bar"></div>
+  </div>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-mark">YSL</span>
+        <span class="logo-sub">Atelier des Essences</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="experience.html">The Ritual</a></li>
+        <li><a href="technology.html">Technology</a></li>
+        <li><a href="collective.html">Collective</a></li>
+        <li><a href="sustainability.html">Sustainability</a></li>
+        <li><a href="../index.html#timeline">Locations</a></li>
+      </ul>
+      <a href="book.html" class="nav-cta active">Reserve a Session</a>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <a href="experience.html">The Ritual</a>
+    <a href="technology.html">Technology</a>
+    <a href="collective.html">Collective</a>
+    <a href="sustainability.html">Sustainability</a>
+    <a href="book.html">Reserve a Session</a>
+  </div>
+
+  <header class="page-head">
+    <div class="container">
+      <div class="crumbs reveal"><a href="../index.html">Atelier</a> <span>/</span> Reserve</div>
+      <div class="page-head-grid">
+        <div>
+          <div class="eyebrow reveal">By appointment · Founding cohort</div>
+          <h1 class="display-xl reveal reveal-delay-1" style="margin-top: 1.5rem;">Reserve.</h1>
+        </div>
+        <p class="lede reveal reveal-delay-2">
+          Sessions are released monthly. The Dubai pilot opens Q4 2026 with
+          eight slots per day, by appointment only. Founding cohort places
+          remain.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Form + locations side-by-side -->
+  <section class="section" style="padding-top: 4rem;">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 5rem;">
+
+        <!-- Form -->
+        <div class="reveal">
+          <div class="eyebrow" style="margin-bottom: 1.5rem;">Request a session</div>
+          <p class="muted" style="margin-bottom: 2.5rem; max-width: 40ch; line-height: 1.7;">
+            Submit your request and a concierge will respond within 48 hours
+            with available windows at your chosen flagship.
+          </p>
+
+          <form class="form" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="first">First name</label>
+                <input type="text" id="first" required />
+              </div>
+              <div class="field">
+                <label for="last">Last name</label>
+                <input type="text" id="last" required />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" required />
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="city">Preferred Atelier</label>
+                <select id="city" required>
+                  <option value="dubai">Dubai · Dubai Mall (Open Q4 2026)</option>
+                  <option value="london">London · Harrods (Q2 2027)</option>
+                  <option value="tokyo">Tokyo · Ginza Six (Q3 2027)</option>
+                  <option value="paris">Paris · Avenue Montaigne (Q3 2027)</option>
+                  <option value="ny">New York · 5th Avenue (Q4 2027)</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="tier">Session type</label>
+                <select id="tier" required>
+                  <option value="bespoke">Bespoke Creation · $400–500</option>
+                  <option value="refill">Refill · $260–350</option>
+                  <option value="collective">Collective Reservation · $100–150</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="window">Preferred window</label>
+                <select id="window">
+                  <option>Q4 2026 · Founding cohort</option>
+                  <option>Q1 2027</option>
+                  <option>Q2 2027</option>
+                  <option>Later in 2027</option>
+                  <option>I'm flexible</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="phone">Phone (optional)</label>
+                <input type="tel" id="phone" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="notes">Anything we should know</label>
+              <textarea id="notes" placeholder="Allergies, accessibility needs, scent memory you'd like to honour…"></textarea>
+            </div>
+
+            <label class="checkbox">
+              <input type="checkbox" required />
+              <span>I have read and understand the ephemeral data policy. I consent to neural and skin biometric processing solely for the purpose of formula composition, with on-device wipe at session end.</span>
+            </label>
+
+            <label class="checkbox">
+              <input type="checkbox" />
+              <span>Send me Atelier letters — quarterly, Master Perfumer reflections only. No marketing.</span>
+            </label>
+
+            <button type="submit" class="btn btn-primary" style="margin-top: 1rem; align-self: start;">
+              Request my session
+            </button>
+          </form>
+
+          <div class="form-success">
+            <div class="eyebrow" style="justify-content: center; display: inline-flex; margin-bottom: 1.5rem;">Reservation received</div>
+            <p style="font-family: var(--font-display); font-size: 1.6rem; line-height: 1.4; color: var(--cream); margin-bottom: 1rem;">
+              Your request is in the hands of an Atelier concierge.
+            </p>
+            <p style="color: var(--mist);">A response will reach you within 48 hours with available windows. Until then, breathe well.</p>
+          </div>
+        </div>
+
+        <!-- Aside info -->
+        <aside class="reveal reveal-delay-1">
+          <div style="position: sticky; top: 7rem;">
+            <div class="eyebrow" style="margin-bottom: 1.5rem;">What to expect</div>
+            <h3 class="display-md" style="margin-bottom: 2rem;">A 90-minute<br /><em>composition.</em></h3>
+
+            <div style="display: grid; gap: 1.5rem;">
+              <div style="padding: 1.5rem; background: var(--bg-ash); border: 1px solid var(--line-soft);">
+                <p style="font-size: 0.7rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem;">Duration</p>
+                <p style="color: var(--cream-soft);">90 minutes — arrival, consent, baseline, composition, bottling.</p>
+              </div>
+              <div style="padding: 1.5rem; background: var(--bg-ash); border: 1px solid var(--line-soft);">
+                <p style="font-size: 0.7rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem;">Outcome</p>
+                <p style="color: var(--cream-soft);">A 50 ml engraved bottle of an entirely new fragrance, NFC-linked to your ScentID vault for life.</p>
+              </div>
+              <div style="padding: 1.5rem; background: var(--bg-ash); border: 1px solid var(--line-soft);">
+                <p style="font-size: 0.7rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem;">Aftercare</p>
+                <p style="color: var(--cream-soft);">Daily wear-notes from the perfumer for the first seven days. Refill at any flagship from Day 90.</p>
+              </div>
+              <div style="padding: 1.5rem; background: var(--bg-ash); border: 1px solid var(--line-soft);">
+                <p style="font-size: 0.7rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem;">Privacy</p>
+                <p style="color: var(--cream-soft);">All session biometrics are erased on-device in front of you. Only the anonymous formula vector is stored.</p>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Locations -->
+  <section class="section experience" id="locations">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow reveal">Atelier Locations</div>
+          <h2 class="display-lg reveal reveal-delay-1" style="margin-top: 1.5rem;">Five flagships,<br /><em>five chapters.</em></h2>
+        </div>
+        <p class="lede reveal reveal-delay-2">
+          The pilot opens in Dubai — chosen for the Scent-Sation precedent and
+          its multi-cultural fragrance density. Four global ateliers follow
+          across 2027.
+        </p>
+      </div>
+
+      <div class="locations">
+        <div class="location reveal">
+          <div class="location-status">Opening Q4 2026</div>
+          <h3 class="location-city">Dubai</h3>
+          <p class="location-flagship">Dubai Mall — Fashion Avenue</p>
+          <p class="location-address">YSL Beauty flagship · Lower Ground · By appointment only</p>
+        </div>
+        <div class="location reveal reveal-delay-1">
+          <div class="location-status coming">Q2 2027</div>
+          <h3 class="location-city">London</h3>
+          <p class="location-flagship">Harrods — Beauty Hall</p>
+          <p class="location-address">87–135 Brompton Road · Knightsbridge · Concierge appointment</p>
+        </div>
+        <div class="location reveal reveal-delay-2">
+          <div class="location-status coming">Q3 2027</div>
+          <h3 class="location-city">Tokyo</h3>
+          <p class="location-flagship">Ginza Six — 1F YSL Beauty</p>
+          <p class="location-address">6-10-1 Ginza · Chuo City · By appointment</p>
+        </div>
+        <div class="location reveal">
+          <div class="location-status coming">Q3 2027</div>
+          <h3 class="location-city">Paris</h3>
+          <p class="location-flagship">Avenue Montaigne — YSL Atelier</p>
+          <p class="location-address">38 Avenue Montaigne · 8e · Sur réservation</p>
+        </div>
+        <div class="location reveal reveal-delay-1">
+          <div class="location-status coming">Q4 2027</div>
+          <h3 class="location-city">New York</h3>
+          <p class="location-flagship">5th Avenue — YSL Beauty</p>
+          <p class="location-address">691 Fifth Avenue · Manhattan · By appointment</p>
+        </div>
+        <div class="location reveal reveal-delay-2" style="background: var(--bg-ash);">
+          <h3 class="location-city" style="color: var(--gold);">Beyond</h3>
+          <p class="location-flagship">Travel-retail · Hospitality</p>
+          <p class="location-address">2028 expansion to top travel-retail (DXB, CDG, HND, JFK) and hospitality partners — Four Seasons, Emirates, The Ned.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: 0; padding-top: 0;">
+        <div>© 2026 YSL Beauty · L'Oréal Luxe</div>
+        <div><a href="../index.html">Atelier home</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
